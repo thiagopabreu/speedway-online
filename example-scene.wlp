@@ -1,0 +1,6796 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "components": [
+                {
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "17",
+                        "speed": 0.0299999
+                    }
+                }
+            ],
+            "transformation": [
+                -0.9981167,
+                0.0,
+                -0.0616746,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0616746,
+                0.0,
+                -0.9981167,
+                0.0,
+                -2.2216358,
+                0.7593964,
+                -24.0152549,
+                1.0
+            ]
+        },
+        "15": {
+            "name": "FloorPlane",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    }
+                }
+            ],
+            "transformation": [
+                300.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.124884,
+                -300.001007,
+                0.0,
+                0.0,
+                300.000061,
+                -0.1248836,
+                0.0,
+                0.0,
+                0.0,
+                0.0000061,
+                1.0
+            ]
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look",
+                    "active": false
+                },
+                {
+                    "type": "cursor"
+                }
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                },
+                {
+                    "type": "howler-audio-listener"
+                }
+            ]
+        },
+        "21": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                3.0,
+                2.0,
+                1.0
+            ]
+        },
+        "23": {
+            "name": "Light.000",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.0,
+                3.0,
+                -1.0,
+                1.0
+            ]
+        },
+        "32": {
+            "name": "PeerNetworkedPlayerPool",
+            "components": [
+                {
+                    "type": "peer-networked-player-pool"
+                },
+                {
+                    "type": "peer-manager",
+                    "peer-manager": {
+                        "playerHead": "19",
+                        "networkPlayerPool": "32",
+                        "networkSendFrequencyInS": 0.0099999,
+                        "playerRightHand": "61",
+                        "playerLeftHand": "62",
+                        "voiceEnabled": true
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "33": {
+            "name": "PeerNetworkedPlayer",
+            "parent": "32",
+            "components": [
+                {
+                    "type": "peer-networked-player"
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "34": {
+            "name": "Head",
+            "parent": "33",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "36": {
+            "name": "LeftHand",
+            "parent": "33",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "37": {
+            "name": "RightHand",
+            "parent": "33",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "45": {
+            "name": "PeerNetworkedPlayer",
+            "parent": "32",
+            "components": [
+                {
+                    "type": "peer-networked-player"
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "46": {
+            "name": "Head",
+            "parent": "45",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "47": {
+            "name": "LeftHand",
+            "parent": "45",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "48": {
+            "name": "RightHand",
+            "parent": "45",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "49": {
+            "name": "PeerNetworkedPlayer",
+            "parent": "32",
+            "components": [
+                {
+                    "type": "peer-networked-player"
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "50": {
+            "name": "Head",
+            "parent": "49",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "51": {
+            "name": "LeftHand",
+            "parent": "49",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "52": {
+            "name": "RightHand",
+            "parent": "49",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "53": {
+            "name": "PeerNetworkedPlayer",
+            "parent": "32",
+            "components": [
+                {
+                    "type": "peer-networked-player"
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "54": {
+            "name": "Head",
+            "parent": "53",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "55": {
+            "name": "LeftHand",
+            "parent": "53",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "56": {
+            "name": "RightHand",
+            "parent": "53",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "57": {
+            "name": "PeerNetworkedPlayer",
+            "parent": "32",
+            "components": [
+                {
+                    "type": "peer-networked-player"
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "58": {
+            "name": "Head",
+            "parent": "57",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "59": {
+            "name": "LeftHand",
+            "parent": "57",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "60": {
+            "name": "RightHand",
+            "parent": "57",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "61": {
+            "name": "RightHand",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray right"
+                    }
+                },
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "cursorRayObject": "85",
+                        "cursorObject": "87",
+                        "handedness": "right"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "62": {
+            "name": "LeftHand",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray left"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                },
+                {
+                    "type": "controller-teleport-component",
+                    "controller-teleport-component": {
+                        "teleportIndicatorMeshObject": "84",
+                        "camRoot": "14",
+                        "cam": "18",
+                        "floorGroup": 7
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.075
+                        },
+                        "groups": 4
+                    }
+                }
+            ],
+            "transformation": [
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "63": {
+            "name": "Mesh",
+            "parent": "34",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0999999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0999999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0999999,
+                0.0,
+                0.0,
+                0.0,
+                -1.0,
+                1.0
+            ]
+        },
+        "64": {
+            "name": "Mesh",
+            "parent": "46",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0999999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0999999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0999999,
+                0.0,
+                0.0,
+                0.0,
+                -1.0,
+                1.0
+            ]
+        },
+        "65": {
+            "name": "Mesh",
+            "parent": "54",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0999999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0999999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0999999,
+                0.0,
+                0.0,
+                0.0,
+                -1.0,
+                1.0
+            ]
+        },
+        "66": {
+            "name": "Mesh",
+            "parent": "50",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0999999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0999999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0999999,
+                0.0,
+                0.0,
+                0.0,
+                -1.0,
+                1.0
+            ]
+        },
+        "67": {
+            "name": "Mesh",
+            "parent": "58",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0999999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0999999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0999999,
+                0.0,
+                0.0,
+                0.0,
+                -1.0,
+                1.0
+            ]
+        },
+        "68": {
+            "name": "NetworkButtonContainer",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -3.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "network-buttons",
+                    "network-buttons": {
+                        "peerManagerObject": "32",
+                        "cursor": "61"
+                    }
+                }
+            ]
+        },
+        "69": {
+            "name": "HostButton",
+            "parent": "68",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Host\n"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                1.0,
+                                0.2,
+                                0.05
+                            ]
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                2.6271691,
+                0.0,
+                1.0
+            ]
+        },
+        "70": {
+            "name": "HostButtonBG",
+            "parent": "69",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0064549,
+                1.0
+            ]
+        },
+        "71": {
+            "name": "JoinButton",
+            "parent": "68",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Join\n"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                1.0,
+                                0.2,
+                                0.05
+                            ]
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                2.0,
+                0.0,
+                1.0
+            ]
+        },
+        "72": {
+            "name": "JoinButtonBG",
+            "parent": "71",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0104875,
+                1.0
+            ]
+        },
+        "73": {
+            "name": "FloorCollision",
+            "parent": null,
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "groups": 128,
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                5.0,
+                                1.0,
+                                28.5
+                            ]
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9999998,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0000195,
+                -0.0000408,
+                0.0,
+                0.0,
+                0.0000408,
+                0.9999998,
+                0.0,
+                0.0,
+                -1.0,
+                0.0,
+                1.0
+            ]
+        },
+        "74": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000027,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000027,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000027,
+                0.0,
+                5.0,
+                1.010165,
+                28.4657077,
+                1.0
+            ]
+        },
+        "75": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000027,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000027,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000027,
+                0.0,
+                0.0,
+                1.010165,
+                28.4657077,
+                1.0
+            ]
+        },
+        "76": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000027,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000027,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000027,
+                0.0,
+                -5.0,
+                1.010165,
+                28.4657077,
+                1.0
+            ]
+        },
+        "77": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000019,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000019,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000019,
+                0.0,
+                5.0,
+                1.0124684,
+                -28.5707416,
+                1.0
+            ]
+        },
+        "78": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000019,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000019,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000019,
+                0.0,
+                0.0,
+                1.0124684,
+                -28.5707416,
+                1.0
+            ]
+        },
+        "79": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000019,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000019,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000019,
+                0.0,
+                -5.0,
+                1.0124684,
+                -28.5707416,
+                1.0
+            ]
+        },
+        "80": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1,
+                0.0,
+                5.0,
+                1.0112706,
+                0.0000074,
+                1.0
+            ]
+        },
+        "81": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.100003,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.100003,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.100003,
+                0.0,
+                -5.0,
+                1.0112537,
+                25.9151306,
+                1.0
+            ]
+        },
+        "84": {
+            "link": {
+                "name": "teleport-indicator",
+                "file": "glb\\teleport-indicator.glb"
+            },
+            "name": "TeleportIndicator",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "25"
+                    }
+                }
+            ],
+            "transformation": [
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                -0.466731,
+                0.0,
+                1.0
+            ]
+        },
+        "85": {
+            "name": "Cursor",
+            "parent": "61",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "25"
+                    }
+                }
+            ],
+            "transformation": [
+                0.002,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.002,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                -0.5,
+                1.0
+            ]
+        },
+        "86": {
+            "name": "Indicator",
+            "parent": "61",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "groups": 4,
+                        "sphere": {
+                            "radius": 0.075
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "87": {
+            "name": "CursorDot",
+            "parent": "61",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "25"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "88": {
+            "name": "Environment",
+            "components": [
+                {
+                    "type": "howler-audio-source",
+                    "howler-audio-source": {
+                        "loop": true,
+                        "autoplay": true,
+                        "volume": 0.15,
+                        "spatial": false,
+                        "src": "audio/infinitepeace.mp3"
+                    },
+                    "active": true
+                }
+            ]
+        },
+        "89": {
+            "name": "Cube",
+            "parent": "88",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                }
+            ],
+            "transformation": [
+                1.066313,
+                0.0,
+                0.5504326,
+                0.0,
+                0.0,
+                1.2,
+                0.0,
+                0.0,
+                -0.5504326,
+                0.0,
+                1.066313,
+                0.0,
+                -11.5834732,
+                1.3444354,
+                6.2112693,
+                1.0
+            ]
+        },
+        "90": {
+            "name": "Cube",
+            "parent": "88",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                }
+            ],
+            "transformation": [
+                1.2975101,
+                -0.0001859,
+                0.080421,
+                0.0,
+                0.0001855,
+                1.2999997,
+                0.0000115,
+                0.0,
+                -0.0804209,
+                0.0,
+                1.2975099,
+                0.0,
+                8.4494266,
+                0.2917784,
+                5.8693304,
+                1.0
+            ]
+        },
+        "91": {
+            "name": "Cube",
+            "parent": "88",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                }
+            ],
+            "transformation": [
+                0.4509131,
+                0.0,
+                -0.2160484,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                0.0,
+                0.2160485,
+                0.0,
+                0.4509132,
+                0.0,
+                6.6374301,
+                0.3110236,
+                2.9769589,
+                1.0
+            ]
+        },
+        "92": {
+            "name": "Cube",
+            "parent": "88",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                }
+            ],
+            "transformation": [
+                2.971323,
+                0.0010258,
+                0.4138121,
+                0.0,
+                -0.0010358,
+                3.0,
+                0.0,
+                0.0,
+                -0.4138121,
+                -0.0001428,
+                2.971323,
+                0.0,
+                -10.4223871,
+                2.2617557,
+                -9.3290863,
+                1.0
+            ]
+        },
+        "93": {
+            "name": "Cube",
+            "parent": "88",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                }
+            ],
+            "transformation": [
+                0.7395976,
+                0.8644302,
+                0.3817858,
+                0.0,
+                -0.7681289,
+                0.8323264,
+                -0.3965094,
+                0.0,
+                -0.5504349,
+                -0.0000027,
+                1.0663117,
+                0.0,
+                -15.6836948,
+                0.9833705,
+                5.4296379,
+                1.0
+            ]
+        },
+        "94": {
+            "name": "Cube",
+            "parent": "88",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                }
+            ],
+            "transformation": [
+                1.575245,
+                0.0566388,
+                -1.2309932,
+                0.0,
+                -0.0720021,
+                1.9987034,
+                -0.000176,
+                0.0,
+                1.2301903,
+                0.0444557,
+                1.5762628,
+                0.0,
+                9.7103681,
+                1.2538592,
+                -1.1148993,
+                1.0
+            ]
+        },
+        "95": {
+            "name": "Cube",
+            "parent": "88",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "25"
+                    }
+                }
+            ],
+            "transformation": [
+                0.3248697,
+                0.0566389,
+                -1.9726129,
+                0.0,
+                -0.0530844,
+                1.9987022,
+                0.0486455,
+                0.0,
+                1.972712,
+                0.0444558,
+                0.3261624,
+                0.0,
+                5.3232851,
+                1.2538601,
+                -10.9547767,
+                1.0
+            ]
+        },
+        "96": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1,
+                0.0,
+                5.0,
+                1.0111684,
+                2.5000081,
+                1.0
+            ]
+        },
+        "97": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000045,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000045,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000045,
+                0.0,
+                -4.9998865,
+                1.0113812,
+                27.5297489,
+                1.0
+            ]
+        },
+        "98": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1,
+                0.0,
+                5.0,
+                1.0113729,
+                -2.4999921,
+                1.0
+            ]
+        },
+        "99": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000039,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000039,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000039,
+                0.0,
+                -5.0,
+                1.0113679,
+                24.237751,
+                1.0
+            ]
+        },
+        "100": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000025,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000025,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000025,
+                0.0,
+                -2.5000002,
+                1.0101585,
+                28.5287551,
+                1.0
+            ]
+        },
+        "101": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.100002,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.100002,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.100002,
+                0.0,
+                -2.5000002,
+                1.012467,
+                -28.4923439,
+                1.0
+            ]
+        },
+        "102": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000025,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000025,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000025,
+                0.0,
+                2.5000002,
+                1.0101585,
+                28.5287551,
+                1.0
+            ]
+        },
+        "103": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.100002,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.100002,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.100002,
+                0.0,
+                2.5000002,
+                1.012467,
+                -28.4923439,
+                1.0
+            ]
+        },
+        "112": {
+            "name": "Drum",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "108",
+                        "material": "25"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.33,
+                                1.0199999,
+                                0.33
+                            ]
+                        },
+                        "groups": 4
+                    }
+                },
+                {
+                    "type": "howler-audio-source",
+                    "howler-audio-source": {
+                        "src": "audio/toms.wav",
+                        "volume": 0.4
+                    }
+                },
+                {
+                    "type": "drum",
+                    "drum": {
+                        "networkObject": "32"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                -0.0099999,
+                0.0,
+                0.0,
+                0.0099999,
+                -0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "143": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000051,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000051,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000051,
+                0.0,
+                -5.0,
+                1.0114828,
+                21.2497291,
+                1.0
+            ]
+        },
+        "144": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000066,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000066,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000066,
+                0.0,
+                -4.9998865,
+                1.0116096,
+                22.8643207,
+                1.0
+            ]
+        },
+        "145": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.100006,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.100006,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.100006,
+                0.0,
+                -5.0,
+                1.0115946,
+                19.5719718,
+                1.0
+            ]
+        },
+        "146": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.100006,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.100006,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.100006,
+                0.0,
+                -5.0,
+                1.0116822,
+                16.7350521,
+                1.0
+            ]
+        },
+        "147": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000075,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000075,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000075,
+                0.0,
+                -4.9998865,
+                1.0118094,
+                18.3496341,
+                1.0
+            ]
+        },
+        "148": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000068,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000068,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000068,
+                0.0,
+                -5.0,
+                1.0117942,
+                15.0575351,
+                1.0
+            ]
+        },
+        "149": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000069,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000069,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000069,
+                0.0,
+                -5.0,
+                1.0118932,
+                11.9329748,
+                1.0
+            ]
+        },
+        "150": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000083,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000083,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000083,
+                0.0,
+                -4.9998865,
+                1.0120201,
+                13.5474557,
+                1.0
+            ]
+        },
+        "151": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000077,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000077,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000077,
+                0.0,
+                -5.0,
+                1.0120052,
+                10.2554798,
+                1.0
+            ]
+        },
+        "152": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000079,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000079,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000079,
+                0.0,
+                -5.0,
+                1.0120975,
+                7.3354167,
+                1.0
+            ]
+        },
+        "153": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000093,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000093,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000093,
+                0.0,
+                -4.9998865,
+                1.0122239,
+                8.9499206,
+                1.0
+            ]
+        },
+        "154": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000087,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000087,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000087,
+                0.0,
+                -5.0,
+                1.012209,
+                5.6578903,
+                1.0
+            ]
+        },
+        "155": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000084,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000084,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000084,
+                0.0,
+                -5.0,
+                1.0123029,
+                2.5034983,
+                1.0
+            ]
+        },
+        "156": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000098,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000098,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000098,
+                0.0,
+                -4.9998865,
+                1.0124291,
+                4.1180119,
+                1.0
+            ]
+        },
+        "157": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000092,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000092,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000092,
+                0.0,
+                -5.0,
+                1.0124142,
+                0.8259668,
+                1.0
+            ]
+        },
+        "158": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000095,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000095,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000095,
+                0.0,
+                -5.0,
+                1.0124957,
+                -1.8148213,
+                1.0
+            ]
+        },
+        "159": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000109,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000109,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000109,
+                0.0,
+                -4.9998865,
+                1.0126214,
+                -0.2002978,
+                1.0
+            ]
+        },
+        "160": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000103,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000103,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000103,
+                0.0,
+                -5.0,
+                1.0126073,
+                -3.4923572,
+                1.0
+            ]
+        },
+        "164": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000106,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000106,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000106,
+                0.0,
+                -5.0,
+                1.0127038,
+                -6.504148,
+                1.0
+            ]
+        },
+        "165": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000121,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000121,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000121,
+                0.0,
+                -4.9998865,
+                1.0128294,
+                -4.8895626,
+                1.0
+            ]
+        },
+        "166": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000114,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000114,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000114,
+                0.0,
+                -5.0,
+                1.0128152,
+                -8.1815948,
+                1.0
+            ]
+        },
+        "167": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000122,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000122,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000122,
+                0.0,
+                -5.0,
+                1.0129027,
+                -10.8004541,
+                1.0
+            ]
+        },
+        "168": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000137,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000137,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000137,
+                0.0,
+                -4.9998865,
+                1.0130288,
+                -9.1857557,
+                1.0
+            ]
+        },
+        "169": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000131,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000131,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000131,
+                0.0,
+                -5.0,
+                1.0130119,
+                -12.4778528,
+                1.0
+            ]
+        },
+        "170": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000132,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000132,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000132,
+                0.0,
+                -5.0,
+                1.0131101,
+                -15.5286569,
+                1.0
+            ]
+        },
+        "171": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000146,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000146,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000146,
+                0.0,
+                -4.9998865,
+                1.0132352,
+                -13.9138822,
+                1.0
+            ]
+        },
+        "172": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.100014,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.100014,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.100014,
+                0.0,
+                -5.0,
+                1.0132189,
+                -17.2062702,
+                1.0
+            ]
+        },
+        "173": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000139,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000139,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000139,
+                0.0,
+                -5.0,
+                1.0133109,
+                -20.2202911,
+                1.0
+            ]
+        },
+        "174": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000153,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000153,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000153,
+                0.0,
+                -4.9998865,
+                1.0134353,
+                -18.6054573,
+                1.0
+            ]
+        },
+        "175": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000147,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000147,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000147,
+                0.0,
+                -5.0,
+                1.013419,
+                -21.898014,
+                1.0
+            ]
+        },
+        "176": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000145,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000145,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000145,
+                0.0,
+                -5.0,
+                1.013514,
+                -24.9982624,
+                1.0
+            ]
+        },
+        "177": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.100016,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.100016,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.100016,
+                0.0,
+                -4.9998865,
+                1.0136387,
+                -23.3833904,
+                1.0
+            ]
+        },
+        "178": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000153,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000153,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000153,
+                0.0,
+                -5.0,
+                1.013622,
+                -26.6759777,
+                1.0
+            ]
+        },
+        "179": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000045,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000045,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000045,
+                0.0,
+                5.0861144,
+                1.0112767,
+                25.9151306,
+                1.0
+            ]
+        },
+        "180": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000059,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000059,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000059,
+                0.0,
+                5.0862278,
+                1.0114042,
+                27.5293807,
+                1.0
+            ]
+        },
+        "181": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000053,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000053,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000053,
+                0.0,
+                5.0861144,
+                1.0113909,
+                24.237751,
+                1.0
+            ]
+        },
+        "182": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000066,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000066,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000066,
+                0.0,
+                5.0861144,
+                1.0115058,
+                21.2497291,
+                1.0
+            ]
+        },
+        "183": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.100008,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.100008,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.100008,
+                0.0,
+                5.0862278,
+                1.0116326,
+                22.8643207,
+                1.0
+            ]
+        },
+        "184": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000074,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000074,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000074,
+                0.0,
+                5.0861144,
+                1.0116176,
+                19.5716037,
+                1.0
+            ]
+        },
+        "185": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000074,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000074,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000074,
+                0.0,
+                5.0861144,
+                1.0117137,
+                16.7346839,
+                1.0
+            ]
+        },
+        "186": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000089,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000089,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000089,
+                0.0,
+                5.0862278,
+                1.0118324,
+                18.349266,
+                1.0
+            ]
+        },
+        "187": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000083,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000083,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000083,
+                0.0,
+                5.0861144,
+                1.0118253,
+                15.0579032,
+                1.0
+            ]
+        },
+        "188": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000083,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000083,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000083,
+                0.0,
+                5.0861144,
+                1.0119162,
+                11.9333429,
+                1.0
+            ]
+        },
+        "189": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000098,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000098,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000098,
+                0.0,
+                5.0862278,
+                1.0120431,
+                13.5476398,
+                1.0
+            ]
+        },
+        "190": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000092,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000092,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000092,
+                0.0,
+                5.0861144,
+                1.0120282,
+                10.2558479,
+                1.0
+            ]
+        },
+        "191": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000093,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000093,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000093,
+                0.0,
+                5.0861144,
+                1.0121268,
+                7.3355088,
+                1.0
+            ]
+        },
+        "192": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000108,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000108,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000108,
+                0.0,
+                5.0862278,
+                1.0122469,
+                8.9501047,
+                1.0
+            ]
+        },
+        "193": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000102,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000102,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000102,
+                0.0,
+                5.0861144,
+                1.012232,
+                5.6579823,
+                1.0
+            ]
+        },
+        "194": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000098,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000098,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000098,
+                0.0,
+                5.0861144,
+                1.012326,
+                2.5035443,
+                1.0
+            ]
+        },
+        "195": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000113,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000113,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000113,
+                0.0,
+                5.0862278,
+                1.0124521,
+                4.1180119,
+                1.0
+            ]
+        },
+        "196": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000107,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000107,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000107,
+                0.0,
+                5.0861144,
+                1.0124372,
+                0.8259783,
+                1.0
+            ]
+        },
+        "197": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000109,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000109,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000109,
+                0.0,
+                5.0861144,
+                1.0125187,
+                -1.8148673,
+                1.0
+            ]
+        },
+        "198": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000123,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000123,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000123,
+                0.0,
+                5.0862278,
+                1.0126214,
+                -0.2003006,
+                1.0
+            ]
+        },
+        "199": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000117,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000117,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000117,
+                0.0,
+                5.0861144,
+                1.0126303,
+                -3.4923572,
+                1.0
+            ]
+        },
+        "200": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.100012,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.100012,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.100012,
+                0.0,
+                5.0861144,
+                1.0127269,
+                -6.50424,
+                1.0
+            ]
+        },
+        "201": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000135,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000135,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000135,
+                0.0,
+                5.0862278,
+                1.0128524,
+                -4.8895626,
+                1.0
+            ]
+        },
+        "202": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000129,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000129,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000129,
+                0.0,
+                5.0861144,
+                1.0128382,
+                -8.1814107,
+                1.0
+            ]
+        },
+        "203": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000137,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000137,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000137,
+                0.0,
+                5.0861144,
+                1.0129257,
+                -10.8004541,
+                1.0
+            ]
+        },
+        "204": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000151,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000151,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000151,
+                0.0,
+                5.0862278,
+                1.0130518,
+                -9.1855716,
+                1.0
+            ]
+        },
+        "205": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000145,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000145,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000145,
+                0.0,
+                5.0861144,
+                1.0130119,
+                -12.4778528,
+                1.0
+            ]
+        },
+        "206": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000146,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000146,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000146,
+                0.0,
+                5.0861144,
+                1.0131331,
+                -15.5286569,
+                1.0
+            ]
+        },
+        "207": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000161,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000161,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000161,
+                0.0,
+                5.0862278,
+                1.0132582,
+                -13.9136981,
+                1.0
+            ]
+        },
+        "208": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000154,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000154,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000154,
+                0.0,
+                5.0861144,
+                1.013242,
+                -17.2066383,
+                1.0
+            ]
+        },
+        "209": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000153,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000153,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000153,
+                0.0,
+                5.0861144,
+                1.0133234,
+                -20.2210273,
+                1.0
+            ]
+        },
+        "210": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000168,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000168,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000168,
+                0.0,
+                5.0862278,
+                1.0134583,
+                -18.6058254,
+                1.0
+            ]
+        },
+        "211": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000161,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000161,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000161,
+                0.0,
+                5.0861144,
+                1.013431,
+                -21.8987503,
+                1.0
+            ]
+        },
+        "212": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000159,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000159,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000159,
+                0.0,
+                5.0861144,
+                1.0135298,
+                -24.9989986,
+                1.0
+            ]
+        },
+        "213": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000174,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000174,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000174,
+                0.0,
+                5.0862278,
+                1.0136617,
+                -23.3841266,
+                1.0
+            ]
+        },
+        "214": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1000168,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1000168,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.1000168,
+                0.0,
+                5.0861144,
+                1.013645,
+                -26.6763458,
+                1.0
+            ]
+        },
+        "215": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1,
+                        "type": "sun"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                3.0,
+                -5.721785,
+                1.0
+            ],
+            "parent": null
+        },
+        "216": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                3.0,
+                -11.6254835,
+                1.0
+            ],
+            "parent": null
+        },
+        "217": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                3.0,
+                -18.2418346,
+                1.0
+            ],
+            "parent": null
+        },
+        "218": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                3.0,
+                -22.8304271,
+                1.0
+            ],
+            "parent": null
+        },
+        "219": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                3.0,
+                -29.0821876,
+                1.0
+            ],
+            "parent": null
+        },
+        "812": {
+            "link": {
+                "name": "default",
+                "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
+            },
+            "transformation": [
+                0.0076243,
+                0.0,
+                -0.0,
+                0.0,
+                -0.0,
+                -0.0,
+                -0.0019999,
+                0.0,
+                0.0,
+                0.0019999,
+                -0.0,
+                0.0,
+                -2.7541179,
+                0.0782604,
+                -17.1703548,
+                1.0
+            ]
+        },
+        "813": {
+            "name": "Mesh.000",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.2375217,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1088839,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                28.3733711,
+                0.0,
+                0.0,
+                -0.0682252,
+                0.0715177,
+                1.0
+            ]
+        },
+        "814": {
+            "link": {
+                "name": "default",
+                "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
+            },
+            "transformation": [
+                0.0076243,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                -0.0019998,
+                0.0,
+                0.0,
+                0.0019998,
+                -0.0,
+                0.0,
+                -2.7541179,
+                0.0782609,
+                -1.435981,
+                1.0
+            ],
+            "parent": null
+        },
+        "815": {
+            "link": {
+                "name": "default",
+                "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
+            },
+            "transformation": [
+                0.0076243,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                -0.0019998,
+                0.0,
+                0.0,
+                0.0019998,
+                -0.0,
+                0.0,
+                -2.7541179,
+                0.0782618,
+                13.3201522,
+                1.0
+            ],
+            "parent": null
+        },
+        "816": {
+            "link": {
+                "name": "default",
+                "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
+            },
+            "transformation": [
+                0.0076243,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                -0.0019998,
+                0.0,
+                0.0,
+                0.0019998,
+                -0.0,
+                0.0,
+                2.6444892,
+                0.0782604,
+                -17.1703548,
+                1.0
+            ],
+            "parent": null
+        },
+        "817": {
+            "link": {
+                "name": "default",
+                "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
+            },
+            "transformation": [
+                0.0076243,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                -0.0019998,
+                0.0,
+                0.0,
+                0.0019998,
+                -0.0,
+                0.0,
+                2.6444892,
+                0.0782608,
+                -1.4359807,
+                1.0
+            ],
+            "parent": null
+        },
+        "818": {
+            "link": {
+                "name": "default",
+                "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
+            },
+            "transformation": [
+                0.0076243,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                -0.0019998,
+                0.0,
+                0.0,
+                0.0019998,
+                -0.0,
+                0.0,
+                2.6444892,
+                0.0782618,
+                13.3201522,
+                1.0
+            ],
+            "parent": null
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "83": {
+            "link": {
+                "name": "teleport-indicator-mesh",
+                "file": "glb\\teleport-indicator.glb"
+            }
+        },
+        "108": {
+            "link": {
+                "name": "mesh_0",
+                "file": "glb\\Barrel_01.FBX"
+            }
+        },
+        "129": {
+            "link": {
+                "name": "barrel_biohazard",
+                "file": "glb\\Barrel_01.FBX"
+            }
+        },
+        "231": {
+            "link": {
+                "name": "Circle.010",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "232": {
+            "link": {
+                "name": "Cylinder.005",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "233": {
+            "link": {
+                "name": "Torus.005",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "234": {
+            "link": {
+                "name": "Cylinder.007",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "235": {
+            "link": {
+                "name": "Torus.007",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "236": {
+            "link": {
+                "name": "Plane.003",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "237": {
+            "link": {
+                "name": "Plane.003.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "238": {
+            "link": {
+                "name": "Circle.007",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "239": {
+            "link": {
+                "name": "Cylinder.002",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "240": {
+            "link": {
+                "name": "Torus.002",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "241": {
+            "link": {
+                "name": "Plane.002",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "242": {
+            "link": {
+                "name": "Plane.002.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "243": {
+            "link": {
+                "name": "Circle.009",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "244": {
+            "link": {
+                "name": "Cylinder.004",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "245": {
+            "link": {
+                "name": "Torus.004",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "246": {
+            "link": {
+                "name": "Cylinder.008",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "247": {
+            "link": {
+                "name": "Cylinder.009",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "248": {
+            "link": {
+                "name": "Cylinder.010",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "249": {
+            "link": {
+                "name": "Cylinder.011",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "250": {
+            "link": {
+                "name": "Cylinder.012",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "251": {
+            "link": {
+                "name": "Cylinder.014",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "252": {
+            "link": {
+                "name": "Cylinder.014.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "253": {
+            "link": {
+                "name": "Torus.009",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "254": {
+            "link": {
+                "name": "Torus.008",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "255": {
+            "link": {
+                "name": "Cylinder.015",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "256": {
+            "link": {
+                "name": "Cylinder.016",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "257": {
+            "link": {
+                "name": "Cylinder.017",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "258": {
+            "link": {
+                "name": "Cylinder.018",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "259": {
+            "link": {
+                "name": "Cylinder.019",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "260": {
+            "link": {
+                "name": "Cylinder.020",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "261": {
+            "link": {
+                "name": "Cylinder.020.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "262": {
+            "link": {
+                "name": "Torus.010",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "263": {
+            "link": {
+                "name": "Torus.011",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "264": {
+            "link": {
+                "name": "Cylinder.021",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "265": {
+            "link": {
+                "name": "Cylinder.022",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "266": {
+            "link": {
+                "name": "Cylinder.023",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "267": {
+            "link": {
+                "name": "Cube.003",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "268": {
+            "link": {
+                "name": "Cube.004",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "269": {
+            "link": {
+                "name": "Cube.004.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "270": {
+            "link": {
+                "name": "Cube.006",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "271": {
+            "link": {
+                "name": "Cylinder.026",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "272": {
+            "link": {
+                "name": "Cylinder.027",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "273": {
+            "link": {
+                "name": "Cube.009",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "274": {
+            "link": {
+                "name": "Cube.009.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "275": {
+            "link": {
+                "name": "Cone.001",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "276": {
+            "link": {
+                "name": "Cube.005",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "277": {
+            "link": {
+                "name": "Cube.005.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "278": {
+            "link": {
+                "name": "Cylinder.029",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "279": {
+            "link": {
+                "name": "Cylinder.029.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "280": {
+            "link": {
+                "name": "Cone.002",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "281": {
+            "link": {
+                "name": "Cylinder.037",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "282": {
+            "link": {
+                "name": "Cylinder.041",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "283": {
+            "link": {
+                "name": "Cylinder.041.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "284": {
+            "link": {
+                "name": "Icosphere.001",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "285": {
+            "link": {
+                "name": "Icosphere.002",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "286": {
+            "link": {
+                "name": "Cylinder.042",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "287": {
+            "link": {
+                "name": "Cylinder.042.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "288": {
+            "link": {
+                "name": "Icosphere.003",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "289": {
+            "link": {
+                "name": "Icosphere.004",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "290": {
+            "link": {
+                "name": "Cylinder.043",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "291": {
+            "link": {
+                "name": "Cylinder.043.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "292": {
+            "link": {
+                "name": "Icosphere.005",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "293": {
+            "link": {
+                "name": "Icosphere.006",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "294": {
+            "link": {
+                "name": "Cylinder.044",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "295": {
+            "link": {
+                "name": "Cylinder.044.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "296": {
+            "link": {
+                "name": "Icosphere.007",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "297": {
+            "link": {
+                "name": "Icosphere.008",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "298": {
+            "link": {
+                "name": "Cone.004",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "299": {
+            "link": {
+                "name": "Cone.005",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "300": {
+            "link": {
+                "name": "Cone.006",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "301": {
+            "link": {
+                "name": "Cone.007",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "302": {
+            "link": {
+                "name": "Cone.008",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "303": {
+            "link": {
+                "name": "Cone.009",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "304": {
+            "link": {
+                "name": "Cone.010",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "305": {
+            "link": {
+                "name": "Cone.011",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "306": {
+            "link": {
+                "name": "Cylinder.031",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "307": {
+            "link": {
+                "name": "Cylinder.033",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "308": {
+            "link": {
+                "name": "Cylinder.033.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "309": {
+            "link": {
+                "name": "Cylinder.034",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "310": {
+            "link": {
+                "name": "Cylinder.034.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "311": {
+            "link": {
+                "name": "Cylinder.035",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "312": {
+            "link": {
+                "name": "Cylinder.035.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "313": {
+            "link": {
+                "name": "Cylinder.036",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "314": {
+            "link": {
+                "name": "Cylinder.036.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "315": {
+            "link": {
+                "name": "Cylinder.045",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "316": {
+            "link": {
+                "name": "Cylinder.046",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "317": {
+            "link": {
+                "name": "Cylinder.030",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "318": {
+            "link": {
+                "name": "Cylinder.030.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "319": {
+            "link": {
+                "name": "Icosphere",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "320": {
+            "link": {
+                "name": "Cylinder",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "321": {
+            "link": {
+                "name": "Cylinder.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "322": {
+            "link": {
+                "name": "Plane.001",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "323": {
+            "link": {
+                "name": "Plane.001.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "324": {
+            "link": {
+                "name": "Sphere.003",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "325": {
+            "link": {
+                "name": "Sphere.005",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "326": {
+            "link": {
+                "name": "Sphere.006",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "327": {
+            "link": {
+                "name": "Cylinder.001",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "328": {
+            "link": {
+                "name": "Torus",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "329": {
+            "link": {
+                "name": "Torus.001",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "330": {
+            "link": {
+                "name": "Cylinder.006",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "331": {
+            "link": {
+                "name": "Cylinder.013",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "332": {
+            "link": {
+                "name": "Cylinder.013.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "333": {
+            "link": {
+                "name": "Cone",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "334": {
+            "link": {
+                "name": "Cylinder.024",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "335": {
+            "link": {
+                "name": "Cylinder.032",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "336": {
+            "link": {
+                "name": "Cylinder.038",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "337": {
+            "link": {
+                "name": "Cylinder.039",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "338": {
+            "link": {
+                "name": "Cylinder.039.0",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "339": {
+            "link": {
+                "name": "Cylinder.047",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "340": {
+            "link": {
+                "name": "Cylinder.048",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "341": {
+            "link": {
+                "name": "Torus.003",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "342": {
+            "link": {
+                "name": "Torus.006",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "343": {
+            "link": {
+                "name": "Sphere.004",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "344": {
+            "link": {
+                "name": "Cone.012",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "345": {
+            "link": {
+                "name": "Cone.003",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "346": {
+            "link": {
+                "name": "Cube.002",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "347": {
+            "link": {
+                "name": "Plane.008",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "348": {
+            "link": {
+                "name": "Plane.010",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "349": {
+            "link": {
+                "name": "Cube.007",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "479": {
+            "link": {
+                "name": "Object_0",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "480": {
+            "link": {
+                "name": "Object_1",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "481": {
+            "link": {
+                "name": "Object_2",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "482": {
+            "link": {
+                "name": "Object_3",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "483": {
+            "link": {
+                "name": "Object_4",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "484": {
+            "link": {
+                "name": "Object_5",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "485": {
+            "link": {
+                "name": "Object_6",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "486": {
+            "link": {
+                "name": "Object_7",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "487": {
+            "link": {
+                "name": "Object_8",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "488": {
+            "link": {
+                "name": "Object_9",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "489": {
+            "link": {
+                "name": "Object_10",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "490": {
+            "link": {
+                "name": "Object_11",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "491": {
+            "link": {
+                "name": "Object_12",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "492": {
+            "link": {
+                "name": "Object_13",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "493": {
+            "link": {
+                "name": "Object_14",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "494": {
+            "link": {
+                "name": "Object_15",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "495": {
+            "link": {
+                "name": "Object_16",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "496": {
+            "link": {
+                "name": "Object_17",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "497": {
+            "link": {
+                "name": "Object_18",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "498": {
+            "link": {
+                "name": "Object_19",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "499": {
+            "link": {
+                "name": "Object_20",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "500": {
+            "link": {
+                "name": "Object_21",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "501": {
+            "link": {
+                "name": "Object_22",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "502": {
+            "link": {
+                "name": "Object_23",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "503": {
+            "link": {
+                "name": "Object_24",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "504": {
+            "link": {
+                "name": "Object_25",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "505": {
+            "link": {
+                "name": "Object_26",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "506": {
+            "link": {
+                "name": "Object_27",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "507": {
+            "link": {
+                "name": "Object_28",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "508": {
+            "link": {
+                "name": "Object_29",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "509": {
+            "link": {
+                "name": "Object_30",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "510": {
+            "link": {
+                "name": "Object_31",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "511": {
+            "link": {
+                "name": "Object_32",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "512": {
+            "link": {
+                "name": "Object_33",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "513": {
+            "link": {
+                "name": "Object_34",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "514": {
+            "link": {
+                "name": "Object_35",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "515": {
+            "link": {
+                "name": "Object_36",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "516": {
+            "link": {
+                "name": "Object_37",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "517": {
+            "link": {
+                "name": "Object_38",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "518": {
+            "link": {
+                "name": "Object_39",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "519": {
+            "link": {
+                "name": "Object_40",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "520": {
+            "link": {
+                "name": "Object_41",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "521": {
+            "link": {
+                "name": "Object_42",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "522": {
+            "link": {
+                "name": "Object_43",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "523": {
+            "link": {
+                "name": "Object_44",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "524": {
+            "link": {
+                "name": "Object_45",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "525": {
+            "link": {
+                "name": "Object_46",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "526": {
+            "link": {
+                "name": "Object_47",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "527": {
+            "link": {
+                "name": "Object_48",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "528": {
+            "link": {
+                "name": "Object_49",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "529": {
+            "link": {
+                "name": "Object_50",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "530": {
+            "link": {
+                "name": "Object_51",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "531": {
+            "link": {
+                "name": "Object_52",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "532": {
+            "link": {
+                "name": "Object_53",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "533": {
+            "link": {
+                "name": "Object_54",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "534": {
+            "link": {
+                "name": "Object_55",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "535": {
+            "link": {
+                "name": "Object_56",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "536": {
+            "link": {
+                "name": "Object_57",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "537": {
+            "link": {
+                "name": "Object_58",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "538": {
+            "link": {
+                "name": "Object_59",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "539": {
+            "link": {
+                "name": "Object_60",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "540": {
+            "link": {
+                "name": "Object_61",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "541": {
+            "link": {
+                "name": "Object_62",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "542": {
+            "link": {
+                "name": "Object_63",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "543": {
+            "link": {
+                "name": "Object_64",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "544": {
+            "link": {
+                "name": "Object_65",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "545": {
+            "link": {
+                "name": "Object_66",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "546": {
+            "link": {
+                "name": "Object_67",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "547": {
+            "link": {
+                "name": "Object_68",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "548": {
+            "link": {
+                "name": "Object_69",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "549": {
+            "link": {
+                "name": "Object_70",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "550": {
+            "link": {
+                "name": "Object_71",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "551": {
+            "link": {
+                "name": "Object_72",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "552": {
+            "link": {
+                "name": "Object_73",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "553": {
+            "link": {
+                "name": "Object_74",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "554": {
+            "link": {
+                "name": "Object_75",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "555": {
+            "link": {
+                "name": "Object_76",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "556": {
+            "link": {
+                "name": "Object_77",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "557": {
+            "link": {
+                "name": "Object_78",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "558": {
+            "link": {
+                "name": "Object_79",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "559": {
+            "link": {
+                "name": "Object_80",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "560": {
+            "link": {
+                "name": "Object_81",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "561": {
+            "link": {
+                "name": "Object_82",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "562": {
+            "link": {
+                "name": "Object_83",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "563": {
+            "link": {
+                "name": "Object_84",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "564": {
+            "link": {
+                "name": "Object_85",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "565": {
+            "link": {
+                "name": "Object_86",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "566": {
+            "link": {
+                "name": "Object_87",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "567": {
+            "link": {
+                "name": "Object_88",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "568": {
+            "link": {
+                "name": "Object_89",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "569": {
+            "link": {
+                "name": "Object_90",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "570": {
+            "link": {
+                "name": "Object_91",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "571": {
+            "link": {
+                "name": "Object_92",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "572": {
+            "link": {
+                "name": "Object_93",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "573": {
+            "link": {
+                "name": "Object_94",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "574": {
+            "link": {
+                "name": "Object_95",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "575": {
+            "link": {
+                "name": "Object_96",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "576": {
+            "link": {
+                "name": "Object_97",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "577": {
+            "link": {
+                "name": "Object_98",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "578": {
+            "link": {
+                "name": "Object_99",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "579": {
+            "link": {
+                "name": "Object_100",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "580": {
+            "link": {
+                "name": "Object_101",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "581": {
+            "link": {
+                "name": "Object_102",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "582": {
+            "link": {
+                "name": "Object_103",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "583": {
+            "link": {
+                "name": "Object_104",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "584": {
+            "link": {
+                "name": "Object_105",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "585": {
+            "link": {
+                "name": "Object_106",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "586": {
+            "link": {
+                "name": "Object_107",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "587": {
+            "link": {
+                "name": "Object_108",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "588": {
+            "link": {
+                "name": "Object_109",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "589": {
+            "link": {
+                "name": "Object_110",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "590": {
+            "link": {
+                "name": "Object_111",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "591": {
+            "link": {
+                "name": "Object_112",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "592": {
+            "link": {
+                "name": "Object_113",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "593": {
+            "link": {
+                "name": "Object_114",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "594": {
+            "link": {
+                "name": "Object_115",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "595": {
+            "link": {
+                "name": "Object_116",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "596": {
+            "link": {
+                "name": "Object_117",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "597": {
+            "link": {
+                "name": "Object_118",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "598": {
+            "link": {
+                "name": "Object_119",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "599": {
+            "link": {
+                "name": "Object_120",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "600": {
+            "link": {
+                "name": "Object_121",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "601": {
+            "link": {
+                "name": "Object_122",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "811": {
+            "link": {
+                "name": "default_data",
+                "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
+            }
+        }
+    },
+    "textures": {
+        "t0": {
+            "link": {
+                "name": "DefaultTexture",
+                "file": "default"
+            },
+            "name": "DefaultFont"
+        },
+        "104": {
+            "link": {
+                "name": "texture_0",
+                "file": "glb\\Barrel_01.FBX"
+            }
+        },
+        "105": {
+            "link": {
+                "name": "texture_1",
+                "file": "glb\\Barrel_01.FBX"
+            }
+        },
+        "106": {
+            "link": {
+                "name": "texture_2",
+                "file": "glb\\Barrel_01.FBX"
+            }
+        },
+        "461": {
+            "link": {
+                "name": "texture_0",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "462": {
+            "link": {
+                "name": "texture_1",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "463": {
+            "link": {
+                "name": "texture_2",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "464": {
+            "link": {
+                "name": "texture_3",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "465": {
+            "link": {
+                "name": "texture_4",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "466": {
+            "link": {
+                "name": "texture_5",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "467": {
+            "link": {
+                "name": "texture_6",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "468": {
+            "link": {
+                "name": "texture_7",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "469": {
+            "link": {
+                "name": "texture_8",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "470": {
+            "link": {
+                "name": "texture_9",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "471": {
+            "link": {
+                "name": "texture_10",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "809": {
+            "link": {
+                "name": "texture_0",
+                "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
+            }
+        }
+    },
+    "images": {
+        "f0": {
+            "link": {
+                "name": "DefaultImage",
+                "file": "default"
+            }
+        },
+        "450": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "451": {
+            "link": {
+                "name": "image_1",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "452": {
+            "link": {
+                "name": "image_2",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "453": {
+            "link": {
+                "name": "image_3",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "454": {
+            "link": {
+                "name": "image_4",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "455": {
+            "link": {
+                "name": "image_5",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "456": {
+            "link": {
+                "name": "image_6",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "457": {
+            "link": {
+                "name": "image_7",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "458": {
+            "link": {
+                "name": "image_8",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "459": {
+            "link": {
+                "name": "image_9",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "460": {
+            "link": {
+                "name": "image_10",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            }
+        },
+        "20": {
+            "name": "White",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1
+            },
+            "pipeline": "123"
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.3843137,
+                    0.3089579,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.2352941,
+                    0.1437908,
+                    1.0
+                ]
+            }
+        },
+        "107": {
+            "link": {
+                "name": "barrel_biohazard_mat",
+                "file": "glb\\Barrel_01.FBX"
+            }
+        },
+        "220": {
+            "link": {
+                "name": "Material.002",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "221": {
+            "link": {
+                "name": "Material.004",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "222": {
+            "link": {
+                "name": "Material.008",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "223": {
+            "link": {
+                "name": "Material.001",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "224": {
+            "link": {
+                "name": "Material.007",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "225": {
+            "link": {
+                "name": "Material.013",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "226": {
+            "link": {
+                "name": "DefaultMaterial",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "227": {
+            "link": {
+                "name": "Material",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "228": {
+            "link": {
+                "name": "Material.006",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "229": {
+            "link": {
+                "name": "Material.003",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "230": {
+            "link": {
+                "name": "Material.012",
+                "file": "assets\\source\\engeller.fbx"
+            }
+        },
+        "472": {
+            "link": {
+                "name": "Picnic_Bench_Material",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "473": {
+            "link": {
+                "name": "Ground_Concrete_Material",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "474": {
+            "link": {
+                "name": "Quarterpipe_Material",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "475": {
+            "link": {
+                "name": "Coping_Material",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "476": {
+            "link": {
+                "name": "Concrete_Material",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "477": {
+            "link": {
+                "name": "Rail_Material",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "478": {
+            "link": {
+                "name": "Railing_Material",
+                "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "810": {
+            "link": {
+                "name": "models\\mapobjects\\etl_beach\\b_gate.tga",
+                "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
+            }
+        }
+    },
+    "shaders": {
+        "113": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "115": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "116": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "119": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "121": {
+            "link": {
+                "name": "Static.frag",
+                "file": "default"
+            }
+        },
+        "122": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "125": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "126": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "130": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "131": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "133": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "134": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "137": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "138": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "140": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "141": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "PeerTest",
+            "version": [
+                0,
+                9,
+                0
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19"
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/editor-components-bundle.js",
+                "js"
+            ]
+        },
+        "rendering": {
+            "clearColor": [
+                0.2,
+                0.2,
+                0.2,
+                1.0
+            ]
+        },
+        "runtime": {
+            "webxr": {
+                "requiredFeatures": {
+                    "local": false,
+                    "local-floor": true,
+                    "bounded-floor": false
+                },
+                "optionalFeatures": {
+                    "local": false,
+                    "local-floor": true,
+                    "bounded-floor": false
+                }
+            }
+        }
+    },
+    "animations": {},
+    "skins": {},
+    "files": [
+        "glb/teleport-indicator.glb",
+        "glb/Barrel_01.FBX",
+        "assets/source/engeller.fbx",
+        "assets/obstacles/scene.gltf",
+        "assets/obstacles/source/Belgian_Gate.fbx"
+    ],
+    "pipelines": {
+        "114": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "117": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "118": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "120": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "123": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            }
+        },
+        "124": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            }
+        },
+        "127": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            }
+        },
+        "128": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "132": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "135": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            }
+        },
+        "136": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            }
+        },
+        "139": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "142": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            }
+        }
+    }
+}
