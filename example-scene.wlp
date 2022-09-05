@@ -4552,15 +4552,15 @@
                 0.0,
                 0.0,
                 -0.0,
-                -0.0019998,
+                -0.0019997,
                 0.0,
                 0.0,
-                0.0019998,
+                0.0019997,
                 -0.0,
                 0.0,
                 -2.7541179,
-                0.0782609,
-                -1.435981,
+                0.3310633,
+                0.2705488,
                 1.0
             ],
             "parent": null
@@ -6558,6 +6558,12 @@
             }
         },
         "810": {
+            "link": {
+                "name": "models\\mapobjects\\etl_beach\\b_gate.tga",
+                "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
+            }
+        },
+        "819": {
             "link": {
                 "name": "models\\mapobjects\\etl_beach\\b_gate.tga",
                 "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
