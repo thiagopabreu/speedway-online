@@ -1,0 +1,21 @@
+{
+  "name": "speedway",
+  "version": "1.0.0",
+  "description": "A small set of components for [Wonderland Engine](https://wonderlandengine.com/ \"Wonderland Engine\") for basic networking functionalities using [peer.js](https://peerjs.com/ \"peer.js\").",
+  "main": "js/editor-components-bundle.js",
+  "scripts": {
+    "build": "esbuild js/editor-components-bundle.js --minify --sourcemap --bundle --outfile=deploy/canvas-ui-bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rafern/canvas-ui": "^4.0.1",
+    "@rafern/canvas-ui-wl": "github:rafern/canvas-ui-wl#dev",
+    "esbuild": "^0.12.29"
+  },
+  "dependencies": {
+    "@wonderlandengine/api": "^0.8.8",
+    "@wonderlandengine/components": "^0.8.16",
+    "gl-matrix": "^3.3.0"
+  }
+}

@@ -4552,15 +4552,15 @@
                 0.0,
                 0.0,
                 -0.0,
-                -0.0019997,
+                -0.0019996,
                 0.0,
                 0.0,
-                0.0019997,
+                0.0019996,
                 -0.0,
                 0.0,
                 -2.7541179,
-                0.3310633,
-                0.2705488,
+                0.078,
+                -1.4179999,
                 1.0
             ],
             "parent": null
@@ -4627,15 +4627,15 @@
                 0.0,
                 0.0,
                 -0.0,
-                -0.0019998,
+                -0.0019997,
                 0.0,
                 0.0,
-                0.0019998,
+                0.0019997,
                 -0.0,
                 0.0,
-                2.6444892,
-                0.0782608,
-                -1.4359807,
+                2.6462879,
+                0.0782172,
+                -1.4184188,
                 1.0
             ],
             "parent": null
@@ -4664,6 +4664,163 @@
                 1.0
             ],
             "parent": null
+        },
+        "845": {
+            "link": {
+                "name": "Sketchfab_model",
+                "file": "assets\\finish-line\\scene.gltf"
+            },
+            "transformation": [
+                10.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0000011,
+                -9.9997711,
+                0.0,
+                0.0,
+                9.9997882,
+                -0.0000011,
+                0.0,
+                -1.5877809,
+                -9.5367431640625e-7,
+                23.7074661,
+                1.0
+            ],
+            "name": "FinishLine"
+        },
+        "846": {
+            "link": {
+                "name": "1d28c312bedb4c4c9bc8b2bdfbc85e82.fbx<Sketchfab_model",
+                "file": "assets\\finish-line\\scene.gltf"
+            },
+            "parent": "845"
+        },
+        "847": {
+            "link": {
+                "name": "RootNode<1d28c312bedb4c4c9bc8b2bdfbc85e82.fbx<Sketchfab_model",
+                "file": "assets\\finish-line\\scene.gltf"
+            },
+            "parent": "846"
+        },
+        "848": {
+            "link": {
+                "name": "pCylinder401<RootNode<1d28c312bedb4c4c9bc8b2bdfbc85e82.fbx<Sketchfab_model",
+                "file": "assets\\finish-line\\scene.gltf"
+            },
+            "parent": "847"
+        },
+        "849": {
+            "link": {
+                "name": "polySurface1271<pCylinder401<RootNode<1d28c312bedb4c4c9bc8b2bdfbc85e82.fbx<Sketchfab_model",
+                "file": "assets\\finish-line\\scene.gltf"
+            },
+            "parent": "848"
+        },
+        "850": {
+            "link": {
+                "name": "polySurface1271_lambert1_0<polySurface1271<pCylinder401<RootNode<1d28c312bedb4c4c9bc8b2bdfbc85e82.fbx<Sketchfab_model",
+                "file": "assets\\finish-line\\scene.gltf"
+            },
+            "parent": "849",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                -0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                38.284523,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "852": {
+            "link": {
+                "name": "Sketchfab_model",
+                "file": "assets\\finish-line\\scene.gltf"
+            },
+            "transformation": [
+                10.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0000011,
+                -9.9997653,
+                0.0,
+                0.0,
+                9.9997825,
+                -0.0000011,
+                0.0,
+                4.1653003,
+                -9.5367431640625e-7,
+                23.7074661,
+                1.0
+            ],
+            "name": "FinishLine",
+            "parent": null
+        },
+        "853": {
+            "link": {
+                "name": "1d28c312bedb4c4c9bc8b2bdfbc85e82.fbx<Sketchfab_model",
+                "file": "assets\\finish-line\\scene.gltf"
+            },
+            "parent": "852"
+        },
+        "854": {
+            "link": {
+                "name": "RootNode<1d28c312bedb4c4c9bc8b2bdfbc85e82.fbx<Sketchfab_model",
+                "file": "assets\\finish-line\\scene.gltf"
+            },
+            "parent": "853"
+        },
+        "855": {
+            "link": {
+                "name": "pCylinder401<RootNode<1d28c312bedb4c4c9bc8b2bdfbc85e82.fbx<Sketchfab_model",
+                "file": "assets\\finish-line\\scene.gltf"
+            },
+            "parent": "854"
+        },
+        "856": {
+            "link": {
+                "name": "polySurface1271<pCylinder401<RootNode<1d28c312bedb4c4c9bc8b2bdfbc85e82.fbx<Sketchfab_model",
+                "file": "assets\\finish-line\\scene.gltf"
+            },
+            "parent": "855"
+        },
+        "857": {
+            "link": {
+                "name": "polySurface1271_lambert1_0<polySurface1271<pCylinder401<RootNode<1d28c312bedb4c4c9bc8b2bdfbc85e82.fbx<Sketchfab_model",
+                "file": "assets\\finish-line\\scene.gltf"
+            },
+            "parent": "856",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                -0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                38.284523,
+                0.0,
+                0.0,
+                1.0
+            ]
         }
     },
     "meshes": {
@@ -6178,6 +6335,18 @@
                 "name": "default_data",
                 "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
             }
+        },
+        "824": {
+            "link": {
+                "name": "polySurface1271",
+                "file": "assets\\finish-line\\source\\finish line.fbx"
+            }
+        },
+        "844": {
+            "link": {
+                "name": "polySurface1271_lambert1_0",
+                "file": "assets\\finish-line\\scene.gltf"
+            }
         }
     },
     "textures": {
@@ -6277,6 +6446,24 @@
                 "name": "texture_0",
                 "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
             }
+        },
+        "840": {
+            "link": {
+                "name": "texture_0",
+                "file": "assets\\finish-line\\scene.gltf"
+            }
+        },
+        "841": {
+            "link": {
+                "name": "texture_1",
+                "file": "assets\\finish-line\\scene.gltf"
+            }
+        },
+        "842": {
+            "link": {
+                "name": "texture_2",
+                "file": "assets\\finish-line\\scene.gltf"
+            }
         }
     },
     "images": {
@@ -6350,6 +6537,24 @@
             "link": {
                 "name": "image_10",
                 "file": "assets\\obstacles\\scene.gltf"
+            }
+        },
+        "837": {
+            "link": {
+                "name": "image_0",
+                "file": "assets\\finish-line\\scene.gltf"
+            }
+        },
+        "838": {
+            "link": {
+                "name": "image_1",
+                "file": "assets\\finish-line\\scene.gltf"
+            }
+        },
+        "839": {
+            "link": {
+                "name": "image_2",
+                "file": "assets\\finish-line\\scene.gltf"
             }
         }
     },
@@ -6568,6 +6773,30 @@
                 "name": "models\\mapobjects\\etl_beach\\b_gate.tga",
                 "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
             }
+        },
+        "820": {
+            "link": {
+                "name": "models\\mapobjects\\etl_beach\\b_gate.tga",
+                "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
+            }
+        },
+        "821": {
+            "link": {
+                "name": "models\\mapobjects\\etl_beach\\b_gate.tga",
+                "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
+            }
+        },
+        "823": {
+            "link": {
+                "name": "lambert1",
+                "file": "assets\\finish-line\\source\\finish line.fbx"
+            }
+        },
+        "843": {
+            "link": {
+                "name": "lambert1",
+                "file": "assets\\finish-line\\scene.gltf"
+            }
         }
     },
     "shaders": {
@@ -6685,7 +6914,8 @@
             "sourcePaths": [
                 "/js/editor-components-bundle.js",
                 "js"
-            ]
+            ],
+            "useInternalBundler": false
         },
         "rendering": {
             "clearColor": [
@@ -6717,7 +6947,9 @@
         "glb/Barrel_01.FBX",
         "assets/source/engeller.fbx",
         "assets/obstacles/scene.gltf",
-        "assets/obstacles/source/Belgian_Gate.fbx"
+        "assets/obstacles/source/Belgian_Gate.fbx",
+        "assets/finish-line/source/finish line.fbx",
+        "assets/finish-line/scene.gltf"
     ],
     "pipelines": {
         "114": {
