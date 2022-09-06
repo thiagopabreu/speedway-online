@@ -256,6 +256,18 @@ WL.registerComponent('drum', {
     }
 });
 
+export default bundle = () => {
+    require('./controller-teleport-component');
+require('./drum');
+require('./network-buttons');
+require('./peer-components');
+require('./Tone');
+require('./peerjs.min');
+
+require('@wonderlandengine/api')
+require('@wonderlandengine/components')
+
+}
 WL.registerComponent('network-buttons', {
     peerManagerObject: {type: WL.Type.Object},
     cursor: {type: WL.Type.Object},

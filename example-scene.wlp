@@ -6464,6 +6464,13 @@
                 "name": "texture_2",
                 "file": "assets\\finish-line\\scene.gltf"
             }
+        },
+        "863": {
+            "link": {
+                "name": "1000_F_123010641_4MeunTSn89TrvG8AfZVOvAhys9QWPkpK.jpg",
+                "file": "assets\\Materials\\1000_F_123010641_4MeunTSn89TrvG8AfZVOvAhys9QWPkpK.jpg"
+            },
+            "image": "862"
         }
     },
     "images": {
@@ -6555,6 +6562,12 @@
             "link": {
                 "name": "image_2",
                 "file": "assets\\finish-line\\scene.gltf"
+            }
+        },
+        "862": {
+            "link": {
+                "name": "1000_F_123010641_4MeunTSn89TrvG8AfZVOvAhys9QWPkpK.jpg",
+                "file": "assets\\Materials\\1000_F_123010641_4MeunTSn89TrvG8AfZVOvAhys9QWPkpK.jpg"
             }
         }
     },
@@ -6797,6 +6810,15 @@
                 "name": "lambert1",
                 "file": "assets\\finish-line\\scene.gltf"
             }
+        },
+        "858": {
+            "link": {
+                "name": "models\\mapobjects\\etl_beach\\b_gate.tga",
+                "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
+            }
+        },
+        "859": {
+            "name": "material.000"
         }
     },
     "shaders": {
@@ -6949,7 +6971,8 @@
         "assets/obstacles/scene.gltf",
         "assets/obstacles/source/Belgian_Gate.fbx",
         "assets/finish-line/source/finish line.fbx",
-        "assets/finish-line/scene.gltf"
+        "assets/finish-line/scene.gltf",
+        "assets/Materials/1000_F_123010641_4MeunTSn89TrvG8AfZVOvAhys9QWPkpK.jpg"
     ],
     "pipelines": {
         "114": {
