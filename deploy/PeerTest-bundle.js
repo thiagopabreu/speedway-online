@@ -256,13 +256,19 @@ WL.registerComponent('drum', {
     }
 });
 
+<<<<<<< HEAD
 require('./controller-teleport-component');
+=======
+export default bundle = () => {
+    require('./controller-teleport-component');
+>>>>>>> 179b92aa05c2915a5145c364596aeb9b5fcb48c4
 require('./drum');
 require('./network-buttons');
 require('./peer-components');
 require('./Tone');
 require('./peerjs.min');
 
+<<<<<<< HEAD
 require('@wonderlandengine/components/cursor');
 require('@wonderlandengine/components/cursor-target');
 require('@wonderlandengine/components/wasd-controls');
@@ -271,6 +277,12 @@ require('@wonderlandengine/components/hand-tracking');
 
 
 
+=======
+require('@wonderlandengine/api')
+require('@wonderlandengine/components')
+
+}
+>>>>>>> 179b92aa05c2915a5145c364596aeb9b5fcb48c4
 WL.registerComponent('network-buttons', {
     peerManagerObject: {type: WL.Type.Object},
     cursor: {type: WL.Type.Object},
