@@ -6797,6 +6797,18 @@
                 "name": "lambert1",
                 "file": "assets\\finish-line\\scene.gltf"
             }
+        },
+        "858": {
+            "link": {
+                "name": "models\\mapobjects\\etl_beach\\b_gate.tga",
+                "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
+            }
+        },
+        "859": {
+            "link": {
+                "name": "models\\mapobjects\\etl_beach\\b_gate.tga",
+                "file": "assets\\obstacles\\source\\Belgian_Gate.fbx"
+            }
         }
     },
     "shaders": {

@@ -9,8 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@rafern/canvas-ui": "^4.0.1",
-    "@rafern/canvas-ui-wl": "github:rafern/canvas-ui-wl#dev",
     "esbuild": "^0.12.29"
   },
   "dependencies": {
